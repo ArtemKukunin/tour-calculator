@@ -1,12 +1,12 @@
 // ---- core: pure pricing + public snapshot (shared by page and build) ----
 const TRANSPORT = {
-  bus: { ua: 'Автобус', pl: 'Autokar', en: 'Coach', km: true },
-  car: { ua: 'Авто / бус', pl: 'Samochód / bus', en: 'Car / van', km: true },
-  plane: { ua: 'Літак', pl: 'Samolot', en: 'Plane', km: false },
-  train: { ua: 'Потяг', pl: 'Pociąg', en: 'Train', km: false },
-  boat: { ua: 'Пором / човен', pl: 'Prom / łódź', en: 'Ferry / boat', km: false },
-  taxi: { ua: 'Таксі', pl: 'Taxi', en: 'Taxi', km: false },
-  other: { ua: 'Інше', pl: 'Inne', en: 'Other', km: false }
+  bus: { ua: 'Автобус', pl: 'Autokar', en: 'Coach', zh: '大巴', km: true },
+  car: { ua: 'Авто / бус', pl: 'Samochód / bus', en: 'Car / van', zh: '汽车 / 面包车', km: true },
+  plane: { ua: 'Літак', pl: 'Samolot', en: 'Plane', zh: '飞机', km: false },
+  train: { ua: 'Потяг', pl: 'Pociąg', en: 'Train', zh: '火车', km: false },
+  boat: { ua: 'Пором / човен', pl: 'Prom / łódź', en: 'Ferry / boat', zh: '渡轮 / 船', km: false },
+  taxi: { ua: 'Таксі', pl: 'Taxi', en: 'Taxi', zh: '出租车', km: false },
+  other: { ua: 'Інше', pl: 'Inne', en: 'Other', zh: '其他', km: false }
 };
 const num = v => { const n = Number(v); return Number.isFinite(n) && n > 0 ? n : 0; };
 const itemCost = (it, pax) => num(it.amount) * (it.per === 'person' ? pax : 1);

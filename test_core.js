@@ -1,6 +1,6 @@
 // node test_core.js — checks the pricing maths on the example trip
 const assert = require('assert');
-const { calc, buildPublic } = require('./src/core.js');
+const { calc, buildPublic } = require('./core.js');
 const trip = require('./data/example-trip.json');
 const c = calc(trip);
 assert.strictEqual(c.pax, 30);
@@ -15,3 +15,14 @@ assert.ok(calc(trip, 60).transport > c.transport);
 const pub = JSON.stringify(buildPublic(trip));
 for (const k of ['margin', 'inflation', 'fuelPrice', 'rate', 'amount', 'cost']) assert.ok(!pub.includes('"' + k + '"'), k + ' leaked');
 console.log('ok', c.perPerson);
+// the site must never ship a secret Supabase key
+const fs = require('fs');
+for (const f of ['config.js', 'app.js', 'index.html']) {
+  const s = fs.readFileSync(f, 'utf8');
+  assert.ok(!/sb_secret_/.test(s), f + ' contains a secret key');
+  for (const jwt of s.match(/eyJ[\w-]+\.[\w-]+\.[\w-]+/g) || []) {
+    const role = JSON.parse(Buffer.from(jwt.split('.')[1], 'base64url').toString()).role;
+    assert.notStrictEqual(role, 'service_role', f + ' contains the service_role key');
+  }
+}
+console.log('ok: no secret keys');

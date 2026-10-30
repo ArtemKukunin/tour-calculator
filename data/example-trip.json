@@ -1,0 +1,290 @@
+{
+ "title": "Polska i Bałtyk: Warszawa – Kraków – Zakopane – Helsinki",
+ "dates": "",
+ "intro": "Sześć dni od Warszawy przez Kraków, Wieliczkę i Tatry do Augustowa, a potem przez Wilno, Rygę i Tallinn promem do Helsinek.",
+ "lang": "pl",
+ "currency": "PLN",
+ "pax": 30,
+ "margin": 15,
+ "inflation": 5,
+ "fuelPrice": 6.2,
+ "consumption": 30,
+ "rounding": 10,
+ "showTiers": true,
+ "staff": [
+  {
+   "role": "Kierowca",
+   "rate": 450,
+   "unit": "day",
+   "count": 2,
+   "days": 0
+  },
+  {
+   "role": "Przewodnik / pilot",
+   "rate": 500,
+   "unit": "day",
+   "count": 1,
+   "days": 0
+  },
+  {
+   "role": "Manager",
+   "rate": 1500,
+   "unit": "trip",
+   "count": 1,
+   "days": 0
+  }
+ ],
+ "days": [
+  {
+   "title": "Warszawa",
+   "overnight": "Warszawa",
+   "program": "Spotkanie z grupą, powitalne śniadanie/obiad (zależnie od godzin przylotu).\nRano – Stare Miasto:\n- Plac Zamkowy, Kolumna Zygmunta i Zamek Królewski\n- Rynek Starego Miasta i pomnik Syrenki\n- Barbakan Warszawski\nPołudnie – parki i spacer:\n- Ogród Saski i Grób Nieznanego Żołnierza\n- Krakowskie Przedmieście i Pałac Prezydencki\nPopołudnie – centrum:\n- Pałac Kultury i Nauki, Plac Defilad\nWieczór – Wisła:\n- Bulwary Wiślane, Multimedialny Park Fontann, Plaża Poniatówka",
+   "transport": [
+    {
+     "type": "bus",
+     "note": "transfer z lotniska + miasto",
+     "km": 40,
+     "consumption": 30,
+     "fuelPrice": 6.2,
+     "extra": 150,
+     "capacity": 50
+    }
+   ],
+   "hotel": {
+    "name": "Hotel w centrum Warszawy",
+    "amount": 220,
+    "per": "person"
+   },
+   "meals": [
+    {
+     "name": "Powitalny obiad",
+     "amount": 70,
+     "per": "person"
+    },
+    {
+     "name": "Kolacja",
+     "amount": 60,
+     "per": "person"
+    }
+   ],
+   "excursions": [
+    {
+     "name": "Taras widokowy PKiN",
+     "amount": 35,
+     "per": "person"
+    }
+   ]
+  },
+  {
+   "title": "Warszawa – Kraków",
+   "overnight": "Kraków",
+   "program": "7:00 – wyjazd z Warszawy (ok. 2 h 30 min)\n10:00 – przyjazd do Krakowa\n- Rynek Główny: Sukiennice, Bazylika Mariacka, wieża ratuszowa (1,5 h)\n- Droga Królewska: Brama Floriańska, Barbakan, ul. Floriańska (40 min)\n- Obiad: pierogi, żurek, schabowy\n- Wawel: dziedziniec, Katedra Wawelska, smok wawelski (1–1,5 h)\n- Wieczorny spacer: Planty, bulwary wiślane, rynek nocą",
+   "transport": [
+    {
+     "type": "bus",
+     "note": "Warszawa → Kraków",
+     "km": 300,
+     "consumption": 30,
+     "fuelPrice": 6.2,
+     "extra": 120,
+     "capacity": 50
+    }
+   ],
+   "hotel": {
+    "name": "Hotel przy Starym Mieście",
+    "amount": 200,
+    "per": "person"
+   },
+   "meals": [
+    {
+     "name": "Śniadanie",
+     "amount": 0,
+     "per": "person"
+    },
+    {
+     "name": "Obiad – kuchnia polska",
+     "amount": 65,
+     "per": "person"
+    }
+   ],
+   "excursions": [
+    {
+     "name": "Katedra Wawelska",
+     "amount": 25,
+     "per": "person"
+    },
+    {
+     "name": "Przewodnik miejski Kraków",
+     "amount": 400,
+     "per": "group"
+    }
+   ]
+  },
+  {
+   "title": "Kraków – Wieliczka – Zakopane",
+   "overnight": "Zakopane",
+   "program": "8:30 – wyjazd z Krakowa (20–30 min do Wieliczki)\n- Kopalnia Soli w Wieliczce (UNESCO): Kaplica św. Kingi, solne jeziora, rzeźby z soli – zwiedzanie z przewodnikiem 2–3 h\n- Obiad w Wieliczce (Karczma Halit / Pod Wielką Solą)\nok. 14:30 – przejazd do Zakopanego przez Podhale (2–2,5 h)\n- Kolacja regionalna: oscypek z żurawiną, kwaśnica, moskole",
+   "transport": [
+    {
+     "type": "bus",
+     "note": "Kraków → Wieliczka → Zakopane",
+     "km": 120,
+     "consumption": 30,
+     "fuelPrice": 6.2,
+     "extra": 60,
+     "capacity": 50
+    }
+   ],
+   "hotel": {
+    "name": "Pensjonat w Zakopanem",
+    "amount": 180,
+    "per": "person"
+   },
+   "meals": [
+    {
+     "name": "Obiad w Wieliczce",
+     "amount": 60,
+     "per": "person"
+    },
+    {
+     "name": "Kolacja regionalna",
+     "amount": 75,
+     "per": "person"
+    }
+   ],
+   "excursions": [
+    {
+     "name": "Kopalnia Soli – trasa turystyczna",
+     "amount": 140,
+     "per": "person"
+    }
+   ]
+  },
+  {
+   "title": "Zakopane",
+   "overnight": "Zakopane",
+   "program": "- Wjazd na Gubałówkę: panorama Tatr, punkty widokowe, stragany (1–1,5 h)\n- Spacer po Krupówkach: oscypki, rękodzieło góralskie (1 h)\n- Obiad w karczmie góralskiej\n- Dolina Kościeliska: potoki, skały, jaskinie (2–3 h)\n- Wieczór w centrum Zakopanego",
+   "transport": [
+    {
+     "type": "bus",
+     "note": "przejazdy lokalne",
+     "km": 40,
+     "consumption": 30,
+     "fuelPrice": 6.2,
+     "extra": 80,
+     "capacity": 50
+    }
+   ],
+   "hotel": {
+    "name": "Pensjonat w Zakopanem",
+    "amount": 180,
+    "per": "person"
+   },
+   "meals": [
+    {
+     "name": "Obiad w karczmie",
+     "amount": 65,
+     "per": "person"
+    },
+    {
+     "name": "Kolacja",
+     "amount": 55,
+     "per": "person"
+    }
+   ],
+   "excursions": [
+    {
+     "name": "Kolejka na Gubałówkę (w obie strony)",
+     "amount": 40,
+     "per": "person"
+    },
+    {
+     "name": "Wstęp TPN – Dolina Kościeliska",
+     "amount": 10,
+     "per": "person"
+    }
+   ]
+  },
+  {
+   "title": "Zakopane – Góry Krzemienne – Augustów",
+   "overnight": "Augustów",
+   "program": "6:00 – wyjazd z Zakopanego\n10:30 – przystanek w Górach Krzemiennych: krajobrazy Bieszczad, okolice Kremenarosa (45–60 min)\n17:30 – przyjazd do Augustowa\n- Kanał Augustowski, bulwary nad jeziorem Necko (1–1,5 h)\n- Kolacja w centrum Augustowa",
+   "transport": [
+    {
+     "type": "bus",
+     "note": "Zakopane → Bieszczady → Augustów",
+     "km": 890,
+     "consumption": 30,
+     "fuelPrice": 6.2,
+     "extra": 250,
+     "capacity": 50
+    }
+   ],
+   "hotel": {
+    "name": "Hotel nad jeziorem Necko",
+    "amount": 160,
+    "per": "person"
+   },
+   "meals": [
+    {
+     "name": "Lunch w trasie",
+     "amount": 45,
+     "per": "person"
+    },
+    {
+     "name": "Kolacja",
+     "amount": 60,
+     "per": "person"
+    }
+   ],
+   "excursions": []
+  },
+  {
+   "title": "Augustów – Wilno – Ryga – Tallinn – Helsinki",
+   "overnight": "Helsinki",
+   "program": "6:00 – wyjazd z Augustowa, granica z Litwą\n8:30 – Wilno: Ostra Brama, Katedra Wileńska (45–60 min)\n13:00 – Ryga: Stare Miasto, Dom Bractwa Czarnogłowych (1 h)\n18:00 – Tallinn, prom do Helsinek (2–2,5 h; Tallink Silja, Viking Line, Eckerö Line)\nWieczór – kolacja nad morzem w Helsinkach",
+   "transport": [
+    {
+     "type": "bus",
+     "note": "Augustów → Wilno → Ryga → Tallinn",
+     "km": 800,
+     "consumption": 30,
+     "fuelPrice": 6.2,
+     "extra": 200,
+     "capacity": 50
+    },
+    {
+     "type": "boat",
+     "note": "Prom Tallinn → Helsinki (pasażer)",
+     "amount": 200,
+     "per": "person"
+    },
+    {
+     "type": "boat",
+     "note": "Autokar na promie",
+     "amount": 900,
+     "per": "group"
+    }
+   ],
+   "hotel": {
+    "name": "Hotel w Helsinkach",
+    "amount": 350,
+    "per": "person"
+   },
+   "meals": [
+    {
+     "name": "Lunch w Rydze",
+     "amount": 55,
+     "per": "person"
+    },
+    {
+     "name": "Kolacja w Helsinkach",
+     "amount": 120,
+     "per": "person"
+    }
+   ],
+   "excursions": []
+  }
+ ],
+ "_example": true
+}

@@ -3,5 +3,5 @@
 // Never put the service_role / secret key here.
 window.TOUR_CONFIG = {
   supabaseUrl: 'https://zeabsedufqarfguoiyqr.supabase.co',
-  supabaseAnonKey: ''
+  supabaseAnonKey: 'sb_publishable_ExMkWaW-EznaJiSBwhftIg_YWjkbazU'
 };
